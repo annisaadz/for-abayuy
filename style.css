@@ -1,0 +1,327 @@
+*{
+
+  box-sizing:border-box;
+
+  font-family:Arial, sans-serif;
+
+}
+
+body{
+
+  margin:0;
+
+  height:100vh;
+
+  background:linear-gradient(135deg,#ffd6e8,#ffeef5);
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+/* CARD */
+
+.card{
+
+  background:#fff;
+
+  width:330px;
+
+  padding:25px;
+
+  border-radius:22px;
+
+  text-align:center;
+
+  box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+}
+
+/* CAKE BESAR */
+
+.cake-big{
+
+  width:160px;
+
+  margin:15px auto;
+
+  display:block;
+
+  animation:jellySlow 3s infinite;
+
+}
+
+/* ICONS */
+
+.icons{
+
+  display:flex;
+
+  justify-content:space-around;
+
+  font-size:34px;
+
+  margin-top:10px;
+
+}
+
+.icons div{
+
+  cursor:pointer;
+
+  animation:jelly 2.5s infinite;
+
+}
+
+/* POPUP */
+
+.popup{
+
+  position:fixed;
+
+  top:50%;
+
+  left:50%;
+
+  transform:translate(-50%,-50%);
+
+  background:white;
+
+  padding:20px;
+
+  border-radius:20px;
+
+  z-index:10;
+
+}
+
+.popup-inner{
+
+  text-align:center;
+
+  animation:jelly .6s;
+
+}
+
+.hidden{display:none}
+
+/* PASSWORD */
+
+input{
+
+  width:120px;
+
+  font-size:22px;
+
+  text-align:center;
+
+  margin-bottom:10px;
+
+}
+
+.keypad{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,60px);
+
+  gap:8px;
+
+  justify-content:center;
+
+}
+
+.keypad button{
+
+  padding:12px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#ff5c8a;
+
+  color:white;
+
+  font-size:16px;
+
+}
+
+/* LETTER */
+
+.big-icon{
+
+  font-size:60px;
+
+  cursor:pointer;
+
+}
+
+/* GAME */
+
+.game-box{width:260px}
+
+.maze{
+
+  width:200px;
+
+  height:200px;
+
+  background:#e8f7ef;
+
+  border-radius:14px;
+
+  margin:10px auto;
+
+  position:relative;
+
+}
+
+#player{
+
+  width:40px;
+
+  height:40px;
+
+  background:#4caf50;
+
+  color:white;
+
+  border-radius:8px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  position:absolute;
+
+  top:0;
+
+  left:0;
+
+  transition:.2s;
+
+}
+
+#finish{
+
+  width:40px;
+
+  height:40px;
+
+  background:gold;
+
+  border-radius:8px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  position:absolute;
+
+  bottom:0;
+
+  right:0;
+
+}
+
+.cake{
+
+  width:30px;
+
+  height:30px;
+
+  background:url("https://em-content.zobj.net/source/apple/391/shortcake_1f370.png") no-repeat center/contain;
+
+  position:absolute;
+
+}
+
+.ctrl button{
+
+  margin:4px;
+
+}
+
+/* FLOWER */
+
+.tulip{
+
+  width:150px;
+
+  animation:jellySlow 2s infinite;
+
+}
+
+/* CONFETTI */
+
+#confetti{
+
+  position:fixed;
+
+  inset:0;
+
+  pointer-events:none;
+
+  font-size:28px;
+
+  text-align:center;
+
+}
+
+/* ANIMASI */
+
+@keyframes jelly{
+
+  0%{transform:scale(.8)}
+
+  40%{transform:scale(1.15)}
+
+  70%{transform:scale(.95)}
+
+  100%{transform:scale(1)}
+
+}
+
+@keyframes jellySlow{
+
+  0%{transform:scale(1)}
+
+  50%{transform:scale(1.05,.95)}
+
+  100%{transform:scale(1)}
+
+}
+
+.popup-inner {
+
+  max-height: 80vh;       /* biar nggak kepanjangan */
+
+  overflow-y: auto;       /* INI YANG BIKIN SCROLL */
+
+  padding-right: 6px;
+
+}
+
+/* biar scroll-nya cantik */
+
+.popup-inner::-webkit-scrollbar {
+
+  width: 6px;
+
+}
+
+.popup-inner::-webkit-scrollbar-thumb {
+
+  background: rgba(255,255,255,0.4);
+
+  border-radius: 10px;
+
+}

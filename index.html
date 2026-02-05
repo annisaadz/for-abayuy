@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>HBD 🤍</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="card">
+
+  <h2>‼️ur day‼️</h2>
+
+  <img class="cake-big"
+
+    src="https://em-content.zobj.net/source/apple/391/birthday-cake_1f382.png">
+
+  <div class="icons">
+
+    <div onclick="openPopup('pw')">❤️</div>
+
+    <div onclick="openSpotify()">📼</div>
+
+    <div onclick="openPopup('game')">🎮</div>
+
+    <div onclick="openPopup('flower')">🌷</div>
+
+  </div>
+
+</div>
+
+<!-- PASSWORD -->
+
+<div class="popup hidden" id="pw">
+
+  <div class="popup-inner">
+
+    <h3>ur special day!</h3>
+
+    <input id="pwInput" readonly>
+
+    <div class="keypad">
+
+      <button onclick="addNum(1)">1</button>
+
+      <button onclick="addNum(2)">2</button>
+
+      <button onclick="addNum(3)">3</button>
+
+      <button onclick="addNum(4)">4</button>
+
+      <button onclick="addNum(5)">5</button>
+
+      <button onclick="addNum(6)">6</button>
+
+      <button onclick="addNum(7)">7</button>
+
+      <button onclick="addNum(8)">8</button>
+
+      <button onclick="addNum(9)">9</button>
+
+      <button onclick="delNum()">⌫</button>
+
+      <button onclick="addNum(0)">0</button>
+
+      <button onclick="checkPw()">OK</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- LETTER ICON -->
+
+<div class="popup hidden" id="letterIcon">
+
+  <div class="popup-inner">
+
+    <div class="big-icon" onclick="openLetter()">💌</div>
+
+    <p>tap to open 🤍</p>
+
+  </div>
+
+</div>
+
+<!-- LETTER -->
+
+<div class="popup hidden" id="letter">
+
+  <div class="popup-inner">
+
+       <p>
+
+Haii haii abayy‼️<br><br>
+
+Sebelumnya ca mau ucapin, Barakallah fii umrik, Happy Birthday, Otanjoubi omedetou >0<
+
+haha ca bingung deh mau gimana lagi ngucapinnya, soalnya rasanya satu ucapan aja nggak cukup buat hari spesial ini.<br><br>
+
+Hari ini abay resmi lohh umul balu cie ciee, ca yang resmiin AWOKAWOK, pasti akan banyak hal-hal baruu di kehidupan abay ntah itu belajar ngambil keputusan sendiri, belajar buat ngertiin diri sendiri, dan belajar kalo ga semuanya itu harus sempurna,  i jope you can always be yourself and keep growing in your own way.<br><br>
+
+ca tau perjalanan abay buat smpe ke titik ini pasti ga mudah, cape, stres, overthinking? mungkin itu pernah abay alami tapi liat deh abay bisa lewatinn itu semuanyaaa nangka ngak? BWAHAHA hebat banget proud of u 💗, ca pengin abay selalu inget kalo abay tu pantes buat bahagia buat di banggain pantes buat segalanya dehhh.<br><br>
+
+ga lupa juga ca do'a in semogaa di tahun ini abay di penuhi hal-hal positif, bisa keterima di PTN yang abayy mau abay mimpi' kan dari dulu yang mana nanti bakalan jadi tujuan hidupp abayy masa depan abayy, selalu di kelilingi olang baik lo, dipermudahkan dalam setiap langkah apapun, semoga rezeki abay selalu dilancarkan, e apa lagi oh ini semoga apapun yang lagi abay usahain pelan-pelan nemu jalannya ea.<br><br>
+
+makasii ya abay udh mau berteman sama ca mau kenalan sama ca, tetep jadi abay yang ca kenall yyaww, hehe maaff ya abayy ca cuma bisaa kasi sederhana ginii semoga abay sukaa yaaa.<br>
+
+Once again, happy birthday.<br>
+
+Wishing you all the best 🤍
+
+    </p>
+    
+    <button onclick="closeAll()">tutup</button>
+
+  </div>
+
+</div>
+
+<!-- GAME -->
+
+<div class="popup hidden" id="game">
+
+  <div class="popup-inner game-box">
+
+    <h3>17 ➜ 18</h3>
+
+    <div class="maze">
+
+      <div id="player">17</div>
+
+      <div class="cake" style="top:0;left:120px"></div>
+
+      <div class="cake" style="top:80px;left:40px"></div>
+
+      <div class="cake" style="top:160px;left:120px"></div>
+
+      <div id="finish">18</div>
+
+    </div>
+
+    <p id="info">collect all cakes first 🍰 </p>
+
+    <div class="ctrl">
+
+      <button onclick="move(0,-40)">⬆️</button><br>
+
+      <button onclick="move(-40,0)">⬅️</button>
+
+      <button onclick="move(0,40)">⬇️</button>
+
+      <button onclick="move(40,0)">➡️</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FLOWER -->
+
+<div class="popup hidden" id="flower">
+
+  <div class="popup-inner">
+
+    <img class="tulip"
+
+      src="https://em-content.zobj.net/source/apple/391/bouquet_1f490.png">
+
+    <p>🌷a little virtual bouquet for u 🌷</p>
+
+    <button onclick="closeAll()">tutup</button>
+
+  </div>
+
+</div>
+
+<div id="confetti"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
